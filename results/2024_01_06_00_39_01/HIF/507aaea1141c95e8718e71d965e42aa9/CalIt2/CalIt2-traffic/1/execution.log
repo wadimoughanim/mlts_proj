@@ -1,0 +1,22 @@
+Starting evaluation of experiment HIF-CalIt2-CalIt2-traffic-507aaea1141c95e8718e71d965e42aa9-1
+=============================================
+
+Performing execution for UNSUPERVISED algorithm HIF
+Running container 'ghcr.io/timeeval/lof:0.3.0' with env='{'LOCAL_UID': '501', 'LOCAL_GID': '501'}' in ExecutionType.EXECUTE mode.
+Restricting container to 8.0 CPUs and 15.000 GB RAM
+
+#### Docker container logs ####
+Traceback (most recent call last):
+  File "/app/algorithm.py", line 9, in <module>
+    from pyod.models.lof import LOF
+  File "/usr/local/lib/python3.7/site-packages/pyod/models/lof.py", line 14, in <module>
+    from .base import BaseDetector
+  File "/usr/local/lib/python3.7/site-packages/pyod/models/base.py", line 15, in <module>
+    if _get_sklearn_version() > 20:
+  File "/usr/local/lib/python3.7/site-packages/pyod/utils/utility.py", line 446, in _get_sklearn_version
+    raise ValueError("Sklearn version error")
+ValueError: Sklearn version error
+
+###############################
+
+Docker algorithm failed with status code '1', consider container logs above.
